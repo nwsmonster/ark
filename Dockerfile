@@ -1,4 +1,4 @@
-FROM nhalase/steamcmd:latest AS build-stage
+FROM nwsmonster/steamcmd:latest AS build-stage
 ARG DEBIAN_FRONTEND=noninteractive
 
 LABEL maintainer="nhalase"

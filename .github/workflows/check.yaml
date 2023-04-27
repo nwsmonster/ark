@@ -19,3 +19,8 @@ jobs:
             Dockerfile
             crontab
             main.cfg
+      - uses: sarisia/actions-status-discord@v1
+        if: always()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "Quility Check"
