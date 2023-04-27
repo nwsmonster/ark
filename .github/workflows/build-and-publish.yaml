@@ -17,6 +17,7 @@ jobs:
   check:
     name: "Quality Check"
     uses: ./.github/workflows/check.yaml
+    secrets: inherit
   build-and-publish:
     name: "Build and publish"
     needs:
